@@ -11,7 +11,7 @@ import java.util.*;
  *  Output    24198   23213  23424 25424 23524 56747
  *
  */
-public class Test {
+public class ShortBasiedonMidDigitofNumber {
 
     public static void main (String args[])
     {
