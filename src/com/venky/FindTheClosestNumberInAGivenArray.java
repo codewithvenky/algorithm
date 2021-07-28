@@ -1,4 +1,4 @@
-package com.venky.test;
+package com.venky;
 
 /*
 Find closest value to the given number, from the given array.
