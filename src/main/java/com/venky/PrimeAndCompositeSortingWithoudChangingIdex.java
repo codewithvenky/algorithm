@@ -40,6 +40,7 @@ public class PrimeAndCompositeSortingWithoudChangingIdex {
 
         int result[] = peformOperation(6, data);
 
+
         System.out.println(Arrays.toString(result));
 
     }
