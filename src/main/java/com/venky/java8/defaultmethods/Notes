@@ -1,0 +1,34 @@
+Topics:
+->feature Default Methods In Java 8
+->Why default method have been added .
+->Default Methods and Multiple Inheritance
+
+Next Topic Interface vs  Abstract Class in Java8
+
+
+Interfaces can have default methods with implementation in Java 8 on later.
+Interfaces can have static methods as well, similar to static methods in classes.
+Default methods were introduced to provide backward compatibility for old interfaces so that they can have new methods without affecting existing code
+
+Static default methods: You can define static default methods in interface which will be available to all instances of class which implement this interface.
+This makes it easier for you to organize helper methods in your libraries; you can keep static methods specific to an interface
+in the same interface rather than in a separate class. This enables you to define methods out of your class and yet share with all child classes.
+
+
+Why default methods were needed in java 8?
+Simplest answer is to enable the functionality of lambda expression in java.
+Lambda expression are essentially of type of functional interface. To support lambda expressions seamlessly,
+all core classes have to be modified. But these core classes like java.util.List are implemented not only in JDK classes,
+but also in thousands of client code as well. Any incompatible change in core classes will back fire for sure and will not be accepted at all.
+
+Rules for this conflict resolution are as follows:
+
+1) Most preferred are the overridden methods in classes. They will be matched and called if found before matching anything.
+2) The method with the same signature in the “most specific default-providing interface” is selected.
+   This means if class Animal implements two interfaces i.e. Moveable and Walkable such that Walkable extends Moveable.
+   Then Walkable is here most specific interface and default method will be chosen from here if method signature is matched.
+3) If Moveable and Walkable are independent interfaces then a serious conflict condition happen,
+   and compiler will complain then it is unable to decide. The you have to help compiler by providing extra info that from which interface
+   the default method should be called. e.g.
+
+
