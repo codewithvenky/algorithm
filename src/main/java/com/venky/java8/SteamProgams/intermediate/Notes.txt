@@ -1,0 +1,10 @@
+Intermediate  Operat
+
+filter()
+map()
+sorted()
+limit()
+distinct()
+peek()
+skip()
+flatMap()
