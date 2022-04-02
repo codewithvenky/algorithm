@@ -1,0 +1,3 @@
+A --> B cannot be abstract
+C --> A cannot be final
+D--> B is subtype of A

@@ -1,18 +1,21 @@
-/*
 package com.venky.oracle.pkg10;
 
 import java.util.function.Function;
-
+/* Baase problem
+*/
 public class TripleThis {
     public static void main(String[] args) {
 
-        Function <T,T> tripler = x-> x*3;;
-
+        Function  tripler = x->{return (Integer)x*3;};
         TripleThis.printValue(tripler,4);
     }
 
-    private static <T> printValue(Function f, T num) {
+    private static <T>  void printValue(Function f, T num) {
         System.out.println(f.apply(num));
     }
 }
-*/
+
+/*
+Option D an A
+
+ */

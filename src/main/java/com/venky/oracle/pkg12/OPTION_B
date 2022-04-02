@@ -1,0 +1,9 @@
+##############################################################################################
+String dbURL = "jdbc:derby://localhost/webdb;create=true";
+String user = "tom";
+String password = "secret";
+Connection conn = DriverManager.getConnection(dbURL, user, password);
+##############################################################################################
+String dbURL = "jdbc:derby:codejava/webdb;create=true";
+Connection conn = DriverManager.getConnection(dbURL);
+##############################################################################################

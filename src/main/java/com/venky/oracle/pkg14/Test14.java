@@ -8,14 +8,18 @@ public class Test14 {
     public static void main(String[] args) throws IOException {
   char[] characters =  new char[100];
 
-  try(FileReader reader = new FileReader("c:\\test\\a.txt")){
+  try(FileReader reader = new FileReader("F:\\MyCourse\\repo\\algorithm\\src\\main\\java\\com\\venky\\oracle\\pkg14\\a.txt"))
   {
-  //  characters= reader.read();
-     // reader.readLine();
-      //characters.read();
-      //reader.read(characters);
+
+     // characters= reader.read();
+    //  reader.readLine();
+     // characters.read();
+      reader.read(characters); // Option D is correct
       System.out.println(String.valueOf(characters));
-  }
+
   }
     }
 }
+/*
+OPTION D  reaqer.read(characters);
+ */

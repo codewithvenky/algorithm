@@ -17,3 +17,8 @@ public class Test implements AbilityA, AbilityB {
         System.out.println("ab action");
     }
 }
+
+/*
+Output:
+ab action
+ */

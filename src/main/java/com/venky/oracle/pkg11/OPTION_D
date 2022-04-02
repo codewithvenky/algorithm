@@ -1,0 +1,12 @@
+
+==>>>>OPTION -D
+
+Start-up time, I'd say. Verification that classes are correct takes some time when the class is loaded.
+ Since classes might be loaded in a lazy fashion (not on app start, but when being used for the first time), this might cause unexpected and undesired runtime delays.
+
+Actually the class does not need to be checked in general. The compiler will not emit any invalid bytecode or class construct.
+The reason for verification is that the class may be build on one system, get hosted online and is transmitted to you through the unprotected internet.
+On this path, a malicious attacker might modify the bytecode and create something the compiler might never create; something that can crash the JVM or possibly
+circumvents security restrictions.
+Thus the class is verified before it is used.
+If this is a local application, there is usually no need to check the bytecode again.

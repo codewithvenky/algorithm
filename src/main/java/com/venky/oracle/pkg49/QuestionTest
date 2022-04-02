@@ -1,0 +1,13 @@
+    /*
+    Given the declaration:
+  @interface Resource
+String[] value();
+Examine this code fragment: /* Loci */ class Processorders(...) Which two annotations may be applied at Loci in the code fragment ?
+    A) Resource OB) @Resource("Customer1")
+    C) Resource() OD) Resource({
+        "Customer1",
+                "Customer2"))
+        E) Resource(value = {
+                {}
+     */
+}

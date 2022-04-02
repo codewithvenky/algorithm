@@ -27,3 +27,8 @@ public class BB {
     }
 }
 */
+
+/*
+Outbput opiton A
+B and C  have diffrent Rturn type
+ */
