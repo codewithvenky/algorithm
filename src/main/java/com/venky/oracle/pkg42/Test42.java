@@ -2,7 +2,7 @@ package com.venky.oracle.pkg42;
 
 public class Test42 {
     private final int x = 1;
-   //  static final int y;
+   //static final int y;
 
     public Test42() {
         System.out.print(x);
