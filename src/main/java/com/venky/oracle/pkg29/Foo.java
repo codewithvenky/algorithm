@@ -14,4 +14,4 @@ public class Foo {
     }
 }
 
-////  C public static finala String  alpha = "Alpha"
+////  C public static finfal String  alpha = "Alpha"
