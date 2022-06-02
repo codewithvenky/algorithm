@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 /*
 Find All the distinct character in a String using java 8
  */
-public class FindAllDistinctCharacterFromTheStringUsingJava8
+public class RemoveAllDuplicateCharacterFromTheGivenStringUsingJava8
 {
 
     public static void main(String[] args) {
